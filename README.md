@@ -1,11 +1,13 @@
-# National Risk Index Interactive Dashboard (Enhanced)
+# National Risk Index Interactive Dashboard (Version 3)
 
 This Streamlit app allows users to interactively explore FEMA's National Risk Index (NRI) dataset.
 
 ## Enhancements
 - Dynamic State filter based on Region selection
-- Optional Regression Model toggle with live OLS results
-- Interactive map, bar chart, scatter plot & download option
+- Quick View buttons (Story Views) for common analysis perspectives
+- Optional Outlier toggle to remove large population counties in scatter plot
+- Regression model toggle with live OLS results
+- Interactive map, bar chart, scatter plot & data download option
 
 ## How to Deploy
 
