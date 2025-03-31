@@ -58,7 +58,9 @@ if not df.empty:
     selected_region = st.sidebar.multiselect("Select Region(s)", sorted(regions), default=regions)
 
     states = df[df['REGION'].isin(selected_region)]['STATE'].unique()
-    selected_state = st.sidebar.multiselect("Select State(s)", sorted(states))
+    default_states = [s for s in states if s != 'Alaska']
+    selected_state = st.sidebar.multiselect("Select State(s)", sorted(states), default=default_states)
+
 
     counties = df[df['STATE'].isin(selected_state)]['COUNTY'].unique() if selected_state else []
     selected_county = st.sidebar.multiselect("Select County(s)", sorted(counties))
